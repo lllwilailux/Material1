@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_focused="true">
+        <set>
+            <objectAnimator
+                android:duration="@android:integer/config_shortAnimTime"
+                android:propertyName="textSize"
+                android:valueTo="20sp"
+                android:valueType="floatType">
+
+            </objectAnimator>
+        </set>
+    </item>
+
+    <item android:state_focused="false">
+        <set>
+            <objectAnimator
+                android:duration="@android:integer/config_mediumAnimTime"
+                android:propertyName="translationZ"
+                android:valueTo="10sp"
+                android:valueType="floatType">
+            </objectAnimator>
+        </set>
+    </item>
+
+    <item>
+        <set>
+            <objectAnimator
+                android:duration="@android:integer/config_mediumAnimTime"
+                android:propertyName="translationZ"
+                android:valueTo="0sp"
+                android:valueType="floatType">
+            </objectAnimator>
+        </set>
+    </item>
+</selector>
